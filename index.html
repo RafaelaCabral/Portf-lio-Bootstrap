@@ -21,6 +21,9 @@
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
+        <div class="botao-menu">
+            <button type="button">Abrir menu</button>
+        </div>
         <nav class="container">
             <ul class="menu">
                 <li>
@@ -58,10 +61,10 @@
     <div class="container conteudo">
         <main>
             <section class="destaque">
-                <h2>Em destaqe</h2>
+                <h2>Em destaque</h2>
                 <article class="noticia">
                     <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
+                        <img src="https://placehold.co/320x320">
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
                     </a>
                 </article>
@@ -71,28 +74,28 @@
                 <div class="noticias">
                     <article class="noticia">
                         <a href="#">
-                            <img src="https://via.placeholder.com/320x320">
+                            <img src="https://placehold.co/320x320">
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
                         </a>
                     </article>
     
                     <article class="noticia">
                         <a href="#">
-                            <img src="https://via.placeholder.com/320x320">
+                            <img src="https://placehold.co/320x320">
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
                         </a>
                     </article>
     
                     <article class="noticia">
                         <a href="#">
-                            <img src="https://via.placeholder.com/320x320">
+                            <img src="https://placehold.co/320x320">
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
                         </a>
                     </article>
     
                     <article class="noticia">
                         <a href="#">
-                            <img src="https://via.placeholder.com/320x320">
+                            <img src="https://placehold.co/320x320">
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
                         </a>
                     </article>
@@ -104,25 +107,35 @@
                 <h2>Novidades</h2>
                 <article class="noticia">
                     <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
+                        <img src="https://placehold.co/320x320">
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
                     </a>
                 </article>
                 <article class="noticia">
                     <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
+                        <img src="https://placehold.co/320x320">
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
                     </a>
                 </article>
                 <article class="noticia">
                     <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
+                        <img src="https://placehold.co/320x320">
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
                     </a>
                 </article>
             </section>
         </aside>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
 </body>
 
 </html>
